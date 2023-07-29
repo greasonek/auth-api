@@ -20,12 +20,11 @@ SECRET=Ilovedoggos
 
 ## Game Plan
 
-~~server.js~~
-~~root index.js~~
-~~.gitignore~~
-~~index models~~
-~~POST /signup to create a user.~~
-~~POST /signin to login a user and receive a token.~~
-~~GET /secret should require a valid bearer token.~~
-~~GET /users should require a valid token and “delete” permissions.~~
-
+- ~~server.js~~
+- ~~root index.js~~
+- ~~.gitignore~~
+- ~~index models~~
+- ~~POST /signup to create a user.~~
+- ~~POST /signin to login a user and receive a token.~~
+- ~~GET /secret should require a valid bearer token.~~
+- ~~GET /users should require a valid token and “delete” permissions.~~
