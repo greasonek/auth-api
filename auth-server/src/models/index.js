@@ -7,7 +7,8 @@ const foodModel = require('./food/food.model.js');
 const Collection = require('./data-collection.js');
 
 
-const DATABASE_URL = process.env.DATABASE_URL || 'sqlite:memory;';
+// const DATABASE_URL = process.env.DATABASE_URL || 'sqlite:memory;';
+const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory' : process.env.DATABASE_URL;
 
 const sequelize = new Sequelize(DATABASE_URL);
 const food = foodModel(sequelize, DataTypes);
