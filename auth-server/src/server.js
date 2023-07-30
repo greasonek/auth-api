@@ -31,11 +31,11 @@ app.use('/api/v2', v2Routes);
 
 
 // Catchalls
-app.use(notFound);
+app.use('*', notFound);
 app.use(errorHandler);
 
 module.exports = {
-  server: app,
+  app,
   start: (port) => {
     if (!port) { throw new Error('Missing Port'); }
     app.listen(port, () => {
